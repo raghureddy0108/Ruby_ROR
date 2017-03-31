@@ -1,0 +1,10 @@
+
+  <h1>Edit</h1>
+  <%= form_for @account do |f| %>
+    <p> Firstname:</br> <%= f.text_field :firstname%> </p>
+    <p> Lastname:</br> <%= f.text_field :lastname%> </p>
+    <p> balance:</br> <%= f.text_field :account_balance%> </p>
+    <p> adress:</br> <%= f.text_field :address%> </p>
+    <p> DOB:</br> <%= f.text_field :dob%> </p>
+    <%= f.submit :update %>
+  <% end %>

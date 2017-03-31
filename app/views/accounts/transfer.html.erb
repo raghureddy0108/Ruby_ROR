@@ -1,0 +1,7 @@
+
+<%= form_tag "transfer" do %>
+	
+	To Account:<%= select_tag "account", options_from_collection_for_select(Account.all, "id", "firstname") %> <br />
+	<%= text_field_tag :amount %><br />
+	<%= submit_tag %>
+<% end %>

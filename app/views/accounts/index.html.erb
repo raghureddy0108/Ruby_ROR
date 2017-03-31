@@ -1,0 +1,8 @@
+
+<h1>Welcome to Bank</h1>
+<h1>Following are the available bank accounts</h1>
+<% @accounts.each do |f| %>
+<h2><%= link_to f.firstname, account_path(f) %></h2>
+<% end %>
+
+<%= link_to "new account", new_account_path %>

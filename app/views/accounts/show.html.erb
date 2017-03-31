@@ -1,0 +1,9 @@
+<h2>Firstname: <%= @account.firstname %></h2>
+<h2>Lastname: <%= @account.lastname %></h2>
+<h2>DOB: <%= @account.dob %></h2>
+<h2>address: <%= @account.address %></h2>
+<h2>balance: <%= number_to_currency(@account.account_balance) %></h2>
+<%= link_to "Transfer", amount_account_path(@account) %>
+<%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_account_path %>
+<%= link_to "Delete", account_path(@account), method: :delete, data: { confirm: "Are you sure?"}%>
